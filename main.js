@@ -20,8 +20,8 @@ async function main(){
     const targetedURL = 'https://smartedu.mahidol.ac.th//Enrollment/module/Reports/ReportRegistrationInfo/ReportInvoice.aspx?action=UiGetListStudentResultRegistration'
     
     console.log(`Targeted URL : ${targetedURL}...`)
-
-    const subjectList = await scrapPage( targetedURL )
+   
+    const htmlBody = await scrapPage( targetedURL )
 
     //printReport(pages)
 }
